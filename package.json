@@ -1,5 +1,5 @@
 {
-  "name": "@orb/vue-dragdrop",
+  "name": "orb-vue-dragdrop",
   "version": "1.0.0",
   "description": "Vue drag/drop components",
   "main": "index.js",

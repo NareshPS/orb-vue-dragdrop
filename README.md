@@ -1,9 +1,9 @@
-# @orb/vue-dragdrop
+# orb-vue-dragdrop
 We expose three simple vue components: drag, drop and dragdrop. These components use slots to host the content. The *drop* component emits two events: dropped and dragover.
 
 ## Installation
 ```js
-npm install @orb/vue-dragdrop
+npm install orb-vue-dragdrop
 ```
 
 ### drag

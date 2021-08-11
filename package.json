@@ -1,0 +1,23 @@
+{
+  "name": "@orb/vue-dragdrop",
+  "version": "1.0.0",
+  "description": "Vue drag/drop components",
+  "main": "index.js",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/NareshPS/orb-vue-dragdrop.git"
+  },
+  "keywords": [
+    "vue",
+    "vue-components",
+    "drag",
+    "dragdrop",
+    "drop"
+  ],
+  "author": "NareshPS",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/NareshPS/orb-vue-dragdrop/issues"
+  },
+  "homepage": "https://github.com/NareshPS/orb-vue-dragdrop#readme"
+}

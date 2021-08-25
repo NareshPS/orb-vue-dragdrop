@@ -35,6 +35,11 @@ The below example uses the **select** property on <drop> tag to filter the dropp
   Drop Area
 </drop>
 ```
-    
+
+#### Events
+The drop components support ***four*** events: dropped, dragover, dragenter and dragleave.
+* dropped: The dropped event is emitted when the dropped element statisfies the select criteria. The value of the event is the qualified element.
+* dragover, dragenter and dragleave: These are emitted, as the name suggest, when an element is dragged over the <drop> element.
+
 ### dragdrop
 The dragdrop element behaves both as a drag and a drop element.

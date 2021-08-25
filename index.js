@@ -18,7 +18,7 @@ export const drag = {
 
 export const drop = {
   props: {select: {default: '*'}},
-  emits: ['dropped', 'dragover'],
+  emits: ['dropped', 'dragover', 'dragenter', 'dragleave'],
   methods: {
     source() {return dataTransfer.dragged},
     selection(del /*dropped element */) {
@@ -35,15 +35,21 @@ export const drop = {
 
         return !same && selected != null
       }
-      console.info(allowDrop(), selected)
 
       allowDrop()? this.$emit('dropped', selected): false
     },
-    over(evt) { this.$emit('dragover', evt) }
+    over(evt) { this.$emit('dragover', evt) },
+    enter(evt) { this.$emit('dragenter', evt) },
+    leave(evt) { this.$emit('dragleave', evt) },
   },
 
   template: `
-  <div @drop.prevent="drop" @dragover.prevent="over">
+  <div
+    @drop.prevent="drop"
+    @dragover.prevent="over"
+    @dragenter.prevent="enter"
+    @dragleave.prevent="leave"
+  >
     <slot></slot>
   </div>
   `
